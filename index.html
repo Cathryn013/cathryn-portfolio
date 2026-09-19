@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Minds</title>
+<meta name="description" content="Bright Minds gives teachers ready-to-use lesson plans, creative classroom ideas, printables, and a supportive community, because you make a difference every day.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💛</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="heart">♥</span>
+      <span class="logo-text">Portfolio</span>
+    </a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="resources.html">Projects</a>
+      <a href="about.html">Presentations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="container">
+    <div class="hero-copy">
+      <h1>Welcome,<br><span class="accent-multi">Everyone!</span></h1>
+      <p class="desc">Find engaging resources, fresh ideas, and a community that gets it, because you make a difference every day!</p>
+      <a href="resources.html" class="btn btn-primary">Explore Resources &rarr;</a>
+    </div>
+    <div class="hero-art">
+      <iframe src="https://drive.google.com/file/d/1__AjPXxAZI9XdwI3EdQu85BcZiwXp3zZ/preview" title="Teaching demo" style="width:100%;height:100%;border:none;display:block;" allow="autoplay" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>About Me</h2>
+      <span class="note">Nice to meet you! &#128075;</span>
+    </div>
+    <div class="creator-card">
+      <div class="creator-avatar creator-avatar-photo"><img src="images/creator-photo.jpg" alt="Cathryn Emily Herrera"></div>
+      <div>
+        <p style="margin-bottom:16px;">Hi, I'm <strong>Cathryn Emily Herrera</strong>! I'm a teacher and education student building this portfolio to showcase my coursework and projects in Instructional Design. As I transition out of the classroom, I'm excited to share my approach to teaching, learning, and technology.</p>
+        <a href="about.html" class="btn btn-secondary">See My Presentations &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <nav class="footer-nav">
+        <a href="resources.html">Projects</a>
+        <a href="about.html">Presentations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Bright Minds. All rights reserved.</span>
+      <span>Better Teachers. Brighter Futures.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="wordle-modal" id="wordleModal" hidden>
+  <div class="wordle-modal-backdrop" data-wordle-close></div>
+  <div class="wordle-modal-panel" role="dialog" aria-modal="true" aria-labelledby="wordleTitle">
+    <button class="wordle-modal-close" type="button" data-wordle-close aria-label="Close">&times;</button>
+
+    <div class="wordle-intro" id="wordleIntro">
+      <div class="wordle-intro-icon">&#129504;</div>
+      <h3 id="wordleTitle">Take a Quick Brain Break!</h3>
+      <p>Fancy a round of Wordle while you're here? Guess the 5-letter word (education edition) in 6 tries.</p>
+      <div class="wordle-intro-actions">
+        <button type="button" class="btn btn-primary" id="wordlePlayBtn">Let's Play! &rarr;</button>
+        <button type="button" class="btn btn-outline" id="wordleSkipBtn">No Thanks</button>
+      </div>
+    </div>
+
+    <div class="wordle-game" id="wordleGame" hidden>
+      <h3>Word Break &#128218;</h3>
+      <p class="wordle-message" id="wordleMessage">Guess the 5-letter word in 6 tries!</p>
+      <div class="wordle-board" id="wordleBoard"></div>
+      <div class="wordle-keyboard" id="wordleKeyboard"></div>
+      <button type="button" class="btn btn-secondary wordle-again-btn" id="wordleAgainBtn" hidden>Play Again &rarr;</button>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="wordle-fab" id="wordleFab" aria-label="Play Wordle">
+  <span aria-hidden="true">&#129504;</span> Play Wordle
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
